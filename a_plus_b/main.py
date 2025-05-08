@@ -35,7 +35,7 @@ def main():
     """
     s=sys.stdin.readline()
 
-    print(mysum(s)
+    print(mysum(s))
 
 
 if __name__ == '__main__':

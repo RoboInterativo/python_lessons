@@ -41,6 +41,5 @@ def main():
     print(mysum(l1,l2))
 
 
-if __name__ == '__main__':l
+if __name__ == '__main__':
     main()
-l

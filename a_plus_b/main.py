@@ -2,7 +2,10 @@
 
 import sys
 
-def mysum(a,b):
+def mysum(s):
+    a,b=s.split()
+    a=int(a)
+    b=int(b)
     return a+b
 
 def main():
@@ -30,10 +33,8 @@ def main():
     print(sum(map(int, input().split())))
     """
     s=sys.stdin.readline()
-    a,b=s.split()
-    a=int(a)
-    b=int(b)
-    print(mysum(a,b))
+
+    print(mysum(s)
 
 
 if __name__ == '__main__':

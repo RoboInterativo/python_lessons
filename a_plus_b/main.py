@@ -1,6 +1,7 @@
 
 
 import sys
+from main import *
 
 def mysum(s):
     a,b=s.split()

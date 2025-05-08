@@ -3,11 +3,13 @@
 import sys
 from main import *
 
-def mysum(s):
-    a,b=s.split()
-    a=int(a)
-    b=int(b)
-    return a+b
+def mysum(l1,l2):
+    n=int(l1)
+    arr=map(int, input().split())
+    summ=0
+    for item in arr:
+        summ=summ+item
+    return summ
 
 def main():
     """
@@ -33,10 +35,12 @@ def main():
     Возможное решение задачи "Вычислите сумму чисел в строке":
     print(sum(map(int, input().split())))
     """
-    s=sys.stdin.readline()
+    l1=sys.stdin.readline()
+    l2=sys.stdin.readline()
 
-    print(mysum(s))
+    print(mysum(l1,l2))
 
 
 if __name__ == '__main__':l
     main()
+l

@@ -10,4 +10,4 @@ import pytest
 ])
 def test_addition(l1, l2, expected):
 
-    assert mysumm(l1,l2) == expected
+    assert mysum(l1,l2) == expected

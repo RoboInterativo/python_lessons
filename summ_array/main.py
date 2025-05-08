@@ -5,7 +5,7 @@ from main import *
 
 def mysum(l1,l2):
     n=int(l1)
-    arr=map(int, input().split())
+    arr=map(int, l2)
     summ=0
     for item in arr:
         summ=summ+item

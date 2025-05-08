@@ -31,6 +31,8 @@ def main():
     """
     s=sys.stdin.readline()
     a,b=s.split()
+    a=int(a)
+    b=int(b)
     print(mysum(a,b))
 
 

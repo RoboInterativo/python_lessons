@@ -16,7 +16,7 @@ for num in l:
     if num %6==0:
         konec_chisla= num %10
         if konec_chisla==4:
-            l3.append(num)
+            list6.append(num)
 
 
 

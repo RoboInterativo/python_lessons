@@ -14,3 +14,4 @@ for i in range(1, len(n) - 1):
             interes=interes+1
 
 print(interes)
+ 

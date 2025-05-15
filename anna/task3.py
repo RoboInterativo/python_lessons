@@ -7,7 +7,7 @@ n=int(input()) #число чисел
 l=[]
 for i in range(n):
     num=int(input())
-    l.append()
+    l.append(num)
 
 
 l3=[]

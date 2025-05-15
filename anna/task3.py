@@ -9,9 +9,15 @@ for i in range(n):
     num=int(input())
     l.append()
 
-cnt=0
+
+l3=[]
 for num in l:
     konec_chisla= num %10
     if konec_chisla==3:
-        cnt=cnt+1
-print(cnt)
+        l3.append(num)
+
+max=l3[0]
+for num in l3:
+    if num>max:
+        max=num
+print(max)

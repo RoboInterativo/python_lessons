@@ -9,9 +9,8 @@ for i in range(1, len(n) - 1):
     prev = int(n[i - 1])%2==0
     next_ = int(n[i + 1])%2==0
 
-    if ( current and prev and next_)==True:
-        interes=interes+1
-    if ((not current) and (not prev) and ( not next_ ) )==False:
+    if prev ==current :
+        if next_==current:
             interes=interes+1
 
 print(interes)

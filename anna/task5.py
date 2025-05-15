@@ -1,4 +1,5 @@
 #Минимальное 2х значное кратное 5
+n=int(input()) #число чисел
 l=[]
 for i in range(n):
     num=int(input())

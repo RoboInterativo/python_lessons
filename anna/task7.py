@@ -1,6 +1,8 @@
 n = input().strip()  # Ввод числа (например, "51224")
+summa=0
 
-l=[]
 for i in range(1, len(n) - 1):
     current = int(n[i])
-    l.append(current)
+    if current %2==0:
+        summa=summa+current
+print(summa)

@@ -13,13 +13,13 @@ for num in l:
             list5.append(num)
 
 
+if len(list5)>0:
+    min=list5[0]
 
+    for num in list5:
+        if num<min:
+            min=num
 
-
-min=list5[0]
-
-for num in list5:
-    if num<min:
-        min=num
-
-print(min)
+    print(min)
+else:
+    print("NO")

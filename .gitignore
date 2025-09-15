@@ -1,3 +1,5 @@
 venv
-python_test/__pycache__/
+
 .ipynb_checkpoints
+pandas/data
+__pycache__/

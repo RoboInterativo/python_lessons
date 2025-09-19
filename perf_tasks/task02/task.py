@@ -9,7 +9,6 @@ def myfunc(string1):
         return mystr2
     print (string1 ,reverse(string1))
     return string1==reverse(string1)
-
-
+# 12121
 # myfunc("abba")
 # myfunc("abbu")

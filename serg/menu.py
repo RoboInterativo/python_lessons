@@ -135,7 +135,7 @@ class TaskManager:
             choice = input("Выберите действие(1-6): ").strip()
             if choice == '1':
                 tasks = self.db.get_all_tasks()
-                print(tasks)
+                #print(tasks)
                 self.display_tasks(tasks)
 
             elif choice == '2':

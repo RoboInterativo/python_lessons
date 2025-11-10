@@ -3,3 +3,4 @@ venv
 .ipynb_checkpoints
 pandas/data
 __pycache__/
+.idea

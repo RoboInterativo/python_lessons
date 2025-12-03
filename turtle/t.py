@@ -1,0 +1,10 @@
+from turtle import *
+color('blue')
+circle(100)
+left(120)
+color('red')
+circle(100)
+left(120)
+color('green')
+circle(100)
+t=input()

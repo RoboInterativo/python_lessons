@@ -1,59 +1,71 @@
 class Employee:
-  #классовая переменная
-  all_workers=0
-  raise_amount=1.04
-  #Инит меттод, конструктор класса
-  def __init__(self,first,last,pay):
-    #переменные объекта, инстанса
-    self.first=first
-    self.last=last
-    self.pay=pay
-    Employee.all_workers +=1
-    self.email=f"{self.last}.{self.first}@company.com"
+    #классовая переменная
+    all_workers=0
+    raise_amount=1.04
 
-  @property
-  def fullname(self):
+    #Инит меттод, конструктор класса
+    def __init__(self,first,last,pay):
+    #переменные объекта, инстанса
+        self.first=first
+        self.last=last
+        self.pay=pay
+        Employee.all_workers +=1
+        self.email=f"{self.last}.{self.first}@company.com"
+
+    @property
+    def fullname(self):
       return f"{self.first} {self.last}"
 
-  @fullname.setter
-  def fullname(self,name):
+    @fullname.setter
+    def fullname(self,name):
       self.first,   self.last =name.split()
 
-  @fullname.deleter
-  def fullname(self):
+    @fullname.deleter
+    def fullname(self):
       self.first=None
       self.last =None
-  @classmethod
-  def set_raise_amt(cls,amount):
-    cls.raise_amount=amount
 
-  #Альтернативный консттруктор
-  @classmethod
-  def from_string(cls,emp_str):
-    first,lass,pay=emp_str.split("-")
-    return cls(first,last,pay)
+    #Классовый метод меняет классовые переменные
+    @classmethod
+    def set_raise_amt(cls,amount):
+        cls.raise_amount=amount
 
-  @staticmethod
-  def is_workday(day):
-    if day.weekday==5 or  day.weekday()==6:
-      return False
-    return True
+    #Альтернативный консттруктор
+    @classmethod
+    def from_string(cls,emp_str):
+        first,lass,pay=emp_str.split("-")
+        return cls(first,last,pay)
+
+    @staticmethod
+    def is_workday(day):
+        if day.weekday==5 or  day.weekday()==6:
+          return False
+        return True
 
 
+    #Для преобразования в строку
+    @fullname.deleter
+    def fullname(self):
 
-  def __str__(self):
-      pass
-  def __repr__(self):
-      pass
- def __add__(self):
-     pass
+        self.first=None
+        self.last=None
+    def __str__(self):
+        return f"{self.first},{self.last}"
+    def __repr__(self):
+        return  f"Employee ( {self.first},{self.last},{self.pay})"
 
- def __len__(self):
-     pass
+    def __add__(self,other):
+        return self.pay+other.pay
+
+    def __len__(self):
+         pass
 
 class Developer(Employee):
   raise_amount= 1.01
-  def __init__(self,)
+  #Расширяем init
+  def __init__(self,first,last,pay,lp):
+      super().__init__(first,last,pay)
+      self.lp=lp
 
 
 emp1=Employee("Alex","Shilo","10000")

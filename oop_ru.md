@@ -7,21 +7,22 @@ Hey, everybody. How's [it] going in this series of videos?
 
 Разбив ООП на несколько видео, дает нам возможность сфокусироватся только на одной теме в каждом видое.
 
-В этом видео поговорим об создании экземпляра простого класса. но в начале.
+В этом видео поговорим об создании экземпляра простого класса. но в начале,
+зачем мы должны использовать классы? Сейчас уже классы это не чисто питоновская фича,
+вы можете увидеть что классами пользуются  во многих Языках Программирования,
+и это хорошая причина, чтобы нам их использовать.
+
+Они позволяют нам объединить логически наши данными с фунциями, которые их обрабатывают, так чтобы их
+легко можно было переиспользовать, и легко разрабатывать.
+
+небольшая заметка, если мы говорим что данные и фунции которые их обрабатывают, то мы ассоциируем это с
+определенным классом. Мы нызываем это аттрибуты и методы, и если вы слышите в видео термин
+метод, я имею ввиду фунцию  которая ассоцируется с классом.
 
 
 
 
 
- so in this video
-We'll be learning the basics of creating and instantiating simple classes, but first
-Why should we even use classes
-now this isn't just specific to Python you can see classes being used throughout most modern programming languages, and there's a good reason for that
-they allow us to
-Logically group our data and functions in a way that's easy to [reuse] and also easy to build upon if need be
-Now just a quick side note when I say data and functions that are associated with a specific class
-We call those attributes and methods, and you'll hear me use those terms a lot throughout these videos, so when I say methods
-I mean a function that is associated with a class
 [so] let's go ahead and get started so say we had an application for our company
 And we wanted to [represent] our employees and our python code now
 This would be a great use case for a class because each individual employee is going to have specific

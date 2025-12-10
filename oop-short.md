@@ -24,24 +24,46 @@ class EmpLoyee
     self.pay=pay
     Employee.all_workers +=1
     self.email=f"{self.last}.{self.first}@company.com"
+
+    #deleter
+    @fullname.deleter    
+    def fullname(self):
+
+        self.first=None
+        self.last=None
+    #Сеттер
+    @fullname.setter    
+    def fullname(self,name):
+        first,last=name.split()
+        self.first=first
+        self.last=last
+
+  @property
   def fullname(self):
     return f"{self.first} {self.last}"
 
+  # классовый метод меняет классовую переменную
   @classmethod
   def set_raise_amt(cls,amount):
     cls.raise_amount=amount
 
-  #Альтернативный консттруктор
+  #Альтернативный консттруктор на классовом методе
   @classmethod
   def from_string(cls,emp_str):
     first,lass,pay=emp_str.split("-")
     return cls(first,last,pay)
 
+  #статический метод (не связан с объектом)
   @staticmethod
   def is_workday(day):
     if day.weekday==5 or  day.weekday()==6:
       return False
     return True
+  #  Магический метод __add__
+  def __add__(self,other):
+        return self.pay+other.pay
+
+
 
 class Developer(EmpLoyee):
   pass
@@ -51,6 +73,7 @@ print(Employee.fullname(emp1)) #Метода класса
 
 print (Employee.__dict()__)
 print (emp1.__dict()__)
+print (emp1+emp2)
 ```
 
 

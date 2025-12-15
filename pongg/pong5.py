@@ -26,6 +26,10 @@ clock = pygame.time.Clock()
 
 # Главный игровой цикл
 running = True
+x=10
+y=10
+dx=5
+dy=5
 while running:
 
     # Обработка событий
@@ -43,11 +47,13 @@ while running:
     # Отрисовка
     screen.fill(BLACK)
 
-    pygame.draw.rect(screen, WHITE,(10,10,30,110))
+    pygame.draw.rect(screen, WHITE,(x,y,10,10))
 
 
     # Обновление экрана
     pygame.display.flip()
+    x=x+dx
+    y=y+dy
 
     clock.tick(FPS)
 

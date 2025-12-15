@@ -5,3 +5,4 @@ pandas/data
 __pycache__/
 .idea
 .env
+.zip

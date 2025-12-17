@@ -47,7 +47,9 @@ while running:
     screen.fill(BLACK)
 
     # pygame.draw.rect(screen, WHITE,(10,10,30,110))
-    pygame.draw.rect(screen, WHITE,(x,y,20,20))
+    #pygame.draw.rect(screen, WHITE,(x,y,20,20))
+    pygame.draw.circle(screen, WHITE, (x,y), 10, width=0)
+
 
     # Обновление экрана
     pygame.display.flip()

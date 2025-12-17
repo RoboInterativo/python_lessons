@@ -49,8 +49,6 @@ while running:
 
     pygame.draw.rect(screen, WHITE,(x,y,10,10))
 
-    if
-
 
     # Обновление экрана
     pygame.display.flip()

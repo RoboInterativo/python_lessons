@@ -20,6 +20,7 @@ clock = pygame.time.Clock()
 
 
 
+player_y = 10
 
 
 
@@ -30,6 +31,9 @@ x=10
 y=10
 dx=5
 dy=5
+player_speed=5
+score=0
+font = pygame.font.Font(None, 36)
 while running:
 
     # Обработка событий
@@ -49,13 +53,37 @@ while running:
 
     pygame.draw.rect(screen, WHITE,(x,y,10,10))
 
-    if
+    pygame.draw.rect(screen, WHITE,(750,player_y,PADDLE_WIDTH,PADDLE_HEIGHT))
+
+    # Рисуем счет
+    score_text = font.render(f"Счет: {score}", True, WHITE)
+    screen.blit(score_text, (20, 20))
 
 
     # Обновление экрана
     pygame.display.flip()
     x=x+dx
     y=y+dy
+
+    if x>=WIDTH:
+        x=30
+        y=random.randint(10,500)
+        dx=5
+        dy=5
+        score=score+1
+    if x>=750:
+        if (x <= 750 + PADDLE_WIDTH and
+            y + 10 >= player_y and
+            y <= player_y + PADDLE_HEIGHT):
+            dx = -dx
+        #score += 1
+        # Немного меняем угол отскока для разнообразия
+        #dy = random.choice([-5, 5])
+    if (  x<=0):
+            dx=-dx
+    elif (y>=HEIGHT or  y<=0) :
+            dy=-dy
+    clock.tick(FPS)
 
     clock.tick(FPS)
 

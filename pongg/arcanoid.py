@@ -67,10 +67,7 @@ def ball_to_field_coords(ball_x, ball_y, rect_x, rect_y, rect_width, rect_height
 
     # Проверяем, попадает ли мяч в границы поля
     if 0 <= field_i < 11 and 0 <= field_j < 22:
-        return int(field_i), int(field_j)
-    else:
-        # Если мяч вне поля, возвращаем None или можно вернуть -1, -1
-        return None, None
+
 
 # Создаем два слоя (Surface)
 layer1 = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)  # Слой с альфа-каналом

@@ -1,0 +1,120 @@
+
+# Базовые цвета
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+
+# Дополнительные основные цвета
+YELLOW = (255, 255, 0)
+CYAN = (0, 255, 255)
+MAGENTA = (255, 0, 255)
+
+# Серые оттенки
+GRAY = (128, 128, 128)
+LIGHT_GRAY = (192, 192, 192)
+DARK_GRAY = (64, 64, 64)
+SLATE_GRAY = (112, 128, 144)
+
+# Пастельные цвета
+LIGHT_BLUE = (173, 216, 230)
+LIGHT_GREEN = (144, 238, 144)
+LIGHT_PINK = (255, 182, 193)
+LAVENDER = (230, 230, 250)
+
+# Яркие цвета
+ORANGE = (255, 165, 0)
+PURPLE = (128, 0, 128)
+PINK = (255, 192, 203)
+HOT_PINK = (255, 105, 180)
+
+# Темные цвета
+DARK_RED = (139, 0, 0)
+DARK_GREEN = (0, 100, 0)
+DARK_BLUE = (0, 0, 139)
+DARK_ORANGE = (255, 140, 0)
+DARK_PURPLE = (75, 0, 130)
+
+# Коричневые оттенки
+BROWN = (165, 42, 42)
+SIENNA = (160, 82, 45)
+CHOCOLATE = (210, 105, 30)
+SADDLE_BROWN = (139, 69, 19)
+
+# Природные цвета
+FOREST_GREEN = (34, 139, 34)
+OLIVE = (128, 128, 0)
+GOLD = (255, 215, 0)
+SKY_BLUE = (135, 206, 235)
+NAVY = (0, 0, 128)
+TEAL = (0, 128, 128)
+
+# Веб-цвета
+LIME = (0, 255, 0)
+AQUA = (0, 255, 255)
+FUCHSIA = (255, 0, 255)
+MAROON = (128, 0, 0)
+
+# Металлические оттенки
+SILVER = (192, 192, 192)
+GOLDENROD = (218, 165, 32)
+BRONZE = (205, 127, 50)
+
+# Другие полезные цвета
+CORAL = (255, 127, 80)
+TOMATO = (255, 99, 71)
+TURQUOISE = (64, 224, 208)
+VIOLET = (238, 130, 238)
+INDIGO = (75, 0, 130)
+
+
+color_list=[
+BLACK ,
+WHITE,
+RED ,
+GREEN ,
+BLUE ,
+YELLOW ,
+CYAN ,
+MAGENTA ,
+GRAY,
+LIGHT_GRAY ,
+DARK_GRAY ,
+SLATE_GRAY ,
+LIGHT_BLUE ,
+LIGHT_GREEN ,
+LIGHT_PINK ,
+LAVENDER ,
+ORANGE ,
+PURPLE,
+PINK ,
+HOT_PINK ,
+DARK_RED ,
+DARK_GREEN ,
+DARK_BLUE ,
+DARK_ORANGE,
+DARK_PURPLE ,
+BROWN ,
+SIENNA ,
+CHOCOLATE ,
+SADDLE_BROWN ,#
+FOREST_GREEN ,
+OLIVE ,
+GOLD ,
+SKY_BLUE ,
+NAVY,
+TEAL ,
+LIME ,
+AQUA ,
+FUCHSIA ,
+MAROON ,
+SILVER ,
+GOLDENROD,
+BRONZE ,
+CORAL,
+TOMATO ,
+TURQUOISE ,
+VIOLET ,
+INDIGO
+]

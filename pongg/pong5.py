@@ -10,6 +10,7 @@ WIDTH, HEIGHT = 800, 600
 PADDLE_WIDTH, PADDLE_HEIGHT = 15, 100
 BALL_SIZE = 20
 WHITE = (255, 255, 255)
+RED=(255,0,0)
 BLACK = (0, 0, 0)
 FPS = 60
 
@@ -30,6 +31,12 @@ x=10
 y=10
 dx=5
 dy=5
+rect_x=10
+rect_y=10
+rect_width=50
+rect_height=25
+border_width=1
+
 while running:
 
     # Обработка событий
@@ -47,9 +54,15 @@ while running:
     # Отрисовка
     screen.fill(BLACK)
 
-    pygame.draw.rect(screen, WHITE,(x,y,10,10))
+    # pygame.draw.rect(screen, WHITE,(x,y,10,10))
+    for i in range(11):
+        pygame.draw.rect(screen, RED,(rect_x+i*rect_width,rect_y,
+        rect_width,rect_height) )
+    #rect_x=10 начальная
+    #Левый верхний угол прямоугольник (x,y)
+    #Ширина и высота
 
-    if
+
 
 
     # Обновление экрана

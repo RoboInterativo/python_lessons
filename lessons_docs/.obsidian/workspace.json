@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "eef4450cbdd49c5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "da8978bc98b23f76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02f10445e0e63203",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "16012026 Урок для школьников.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "16012026 Урок для школьников"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7301df4e912c9cc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e6445fa41314463",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b5c0b43c42c260f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "31fb15f79115f9f1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "20af9e76dfe6fbdf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a9bc270feba6fde0",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1be5c4448460a1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e4b6d45fe4b8313",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "16012026 Урок для школьников.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 16012026 Урок для школьников"
+            }
+          },
+          {
+            "id": "6da4130ff6c75b7c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "16012026 Урок для школьников.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 16012026 Урок для школьников"
+            }
+          },
+          {
+            "id": "c8e8028e891b8f3e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fb254b94bdcd9a70",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c0b0d41d63958a09",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "16012026 Урок для школьников.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 16012026 Урок для школьников"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "02f10445e0e63203",
+  "lastOpenFiles": [
+    "16012026 Урок для школьников.md"
+  ]
+}

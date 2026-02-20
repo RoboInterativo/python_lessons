@@ -1,0 +1,23 @@
+<html>
+<body>
+<canvas id="game" width="400" height="400"></canvas>
+
+<script>
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+
+// Данные от сервера (пришли по WebSocket)
+const gameData = {
+    snakes: [{
+        body: [{x:2,y:2}, {x:1,y:2}, {x:0,y:2}]
+    }]
+};
+
+// Рисуем!
+ctx.fillStyle = 'green';
+gameData.snakes[0].body.forEach(segment => {
+    ctx.fillRect(segment.x*40, segment.y*40, 35, 35);
+});
+</script>
+</body>
+<html>

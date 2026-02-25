@@ -29,6 +29,15 @@ DARK_BROWN = (51, 25, 0)
 ТЕМНО_ЗЕЛЕНЫЙ = (0, 100, 0)       # Темный зеленый
 БИРЮЗОВЫЙ = (64, 224, 208)        # Между синим и зеленым
 
+КЛАВИША_НАЖАТА=pygame.KEYDOWN
+КЛАВИША_ВВЕРХ=pygame.K_UP
+КЛАВИША_ВЛЕВО=pygame.K_LEFT
+КЛАВИША_ВПРАВО=pygame.K_RIGHT
+КЛАВИША_ВНИЗ=pygame.K_DOWN
+
+ИСТИНА =True
+ЛОЖЬ =False
+
 
 def полигон(*args):
   pygame.draw.polygon(*args)

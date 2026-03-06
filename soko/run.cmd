@@ -1,3 +1,3 @@
 call venv\Scripts\activate.bat
-python sokocyr.py
+python sokocyr3.py
 choice

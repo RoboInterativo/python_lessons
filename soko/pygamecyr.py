@@ -80,7 +80,7 @@ class Игра:
     def игровой_цикл(self):
         pass
 
-    def клавиши(self):
+    def клавиши(self,event):
         pass
     def столкновения(self):
         pass
@@ -102,7 +102,7 @@ class Игра:
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         running = False
-                    self.клавиши()
+                    self.клавиши(event)
 
             self.игровой_цикл()
             pygame.display.flip()

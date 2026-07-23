@@ -62,17 +62,13 @@ def handle_tool_errors(
         )
 
 tools = [search_tool, wiki_tool, save_to_txt]  # Исправлено: save_to_txt вместо save_tool
+format=parser.get_format_instructions()
 
 # Создаем агента с новым API
 agent = create_agent(
     model=llm,
     tools=tools,
-    system_prompt=f"""
-    Ты — научный ассистент, который поможет сгенерировать научную статью.  
-    Ответь на запрос пользователя и используй необходимые инструменты.  
-    Оформи вывод в этом формате и не предоставляй никакого другого текста:
-    {parser.get_format_instructions()}
-    """,
+    system_prompt=promt,
     middleware=[handle_tool_errors]
 )
 

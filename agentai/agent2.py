@@ -46,20 +46,14 @@ llm = ChatOpenAI(
 parser = PydanticOutputParser(pydantic_object=ResearchResponse)
 
 
-
-prompt = ChatPromptTemplate.from_messages([
-    ("system", """
+format_instructions=parser.get_format_instructions()
+prompt = f"""
       Ты — научный ассистент, который поможет сгенерировать научную статью.  
     Ответь на запрос пользователя и используй необходимые инструменты.  
     Оформи вывод в этом формате и не предоставляй никакого другого текста:
-    Wrap the output in this format and provide no other text {format}
-    """),
-    ("human", """
+    Wrap the output in this format and provide no other text {format_instructions}
+    """
     
-    
-    Вопрос: {content}
-    """)
-])
 
 
 
